@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Landing Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="circle"></div>
+        <ul>
+            <li class="nav-items">Home</li>
+            <li class="nav-items">Contact Us</li>
+            <li class="nav-items">About Us</li>
+        </ul>
+    </nav>
+    <div class="container group">
+        <div class="grid-1-5">
+            <h2>Trial</h2>
+            <h3><span class="uppercase">Free</span></h3>
+            
+            <ul>
+                <li>24/7 Tech Support</li>
+                <li>Advanced Option</li>
+                <li>50GB Storage</li>
+                <li>1Gd Bandwidth</li>
+                
+            </ul>
+            <a href="#" class="button">BUY NOW</a>
+        </div>
+        <div class="grid-1-5">
+            <h2>Basic</h2>
+            <h3><span class="uppercase">$10</span></h3>
+            
+            <ul>
+                <li>24/7 Tech Support</li>
+                <li>Advanced Option</li>
+                <li>100GB Storage</li>
+                <li>2Gd Bandwidth</li>
+                
+            </ul>
+            <a href="#" class="button">BUY NOW</a>
+        </div>
+        <div class="grid-1-5">
+            <h2>Plus</h2>
+            <h3><span class="uppercase">$20</span></h3>
+            
+            <ul>
+                <li>24/7 Tech Support</li>
+                <li>Advanced Option</li>
+                <li>200GB Storage</li>
+                <li>3Gd Bandwidth</li>
+                
+            </ul>
+            <a href="#" class="button">BUY NOW</a>
+        </div>
+        <div class="grid-1-5">
+            <h2>Premium</h2>
+            <h3><span class="uppercase">30$</span></h3>
+            
+            <ul>
+                <li>24/7 Tech Support</li>
+                <li>Advanced Option</li>
+                <li>500GB Storage</li>
+                <li>4Gd Bandwidth</li>
+                
+            </ul>
+            <a href="#" class="button">BUY NOW</a>
+        </div>
+        <div class="grid-1-5">
+            <h2>Enterprise Plan</h2>
+            <h3><span class="uppercase">contact us</span></h3>
+            <p>1M+ monthly visits</p>
+            <ul>
+                <li>Email Support</li>
+                <li>Phone Support</li>
+                <li>Unlimited Data Transfer</li>
+                <li>Customization Options</li>
+              
+            </ul>
+            <a href="#" class="button">Contact Us</a>
+        </div>
+    </div>
+    <div class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>24/7 Customer Support</li>
+            <li>Customizable Plans</li>
+            
+        </ul>
+    </div>
+    <div class="faq">
+        <h2>FAQ</h2>
+        <div class="question">
+            <h3 class="question-toggle">Can I cancel my subscription at any time?</h3>
+            <p class="answer">Yes, you can cancel your subscription at any time. There are no long-term contracts.</p>
+        </div>
+        <div class="question">
+            <h3 class="question-toggle">Do you offer discounts for annual subscriptions?</h3>
+            <p class="answer">Yes, we offer discounts for annual subscriptions. Please contact sales for more information.</p>
+        </div>
+        <div class="question">
+            <h3 class="question-toggle">What payment methods do you accept?</h3>
+            <p class="answer">We accept all major credit cards, PayPal, and bank transfers.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pricing Page</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.question');
+
+            questions.forEach(question => {
+                const toggle = question.querySelector('.question-toggle');
+                const answer = question.querySelector('.answer');
+
+                toggle.addEventListener('click', () => {
+                    answer.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
